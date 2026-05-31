@@ -18,8 +18,10 @@
 
 include:
   - board: xiao_ble//zmk
-    shield: laut_dongle rgbled_adapter
+    shield: zehna_dongle rgbled_adapter
+  #   shield: laut_dongle rgbled_adapter
   #   shield: settings_reset
-  # - board: nice_nano//zmk
+  - board: nice_nano//zmk
+    shield: zehna
   #   shield: laut
   #   shield: settings_reset

@@ -1,0 +1,4 @@
+config SHIELD_ZEHNA
+	def_bool $(shields_list_contains,zehna)
+config SHIELD_ZEHNA_DONGLE
+	def_bool $(shields_list_contains,zehna_dongle)
