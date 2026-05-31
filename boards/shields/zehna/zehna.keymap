@@ -90,7 +90,7 @@
                 &ltg NU     &kp ESC     &kp N1      &kp N2      &kp N3      &kp GRAVE   &kp SEMI    &kp MINUS   &kp EQUAL   &kp BSLH  
                 ____        &kp N0      &kp N4      &kp N5      &kp N6      &key_repeat &kp COMMA   &kp DOT     &kp SQT     &kp SLASH 
                 ____        hs(LGUI)    &kp N7      &kp N8      &kp N9      &capwrd     &kp LBKT    &kp RBKT    &parens     ____ 
-                ____        ____        ____        ____        ____        ____        ____        ____        ____        ____
+                ____        ____        ____        ____        ____        ____        &rp SPACE   ____        ____        ____
             >; 
         };
         
