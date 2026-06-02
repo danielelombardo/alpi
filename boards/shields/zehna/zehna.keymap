@@ -17,6 +17,7 @@
 #define MU 2
 #define FN 3
 #define RST &to 0
+#define LCKS &kp LC(LA(DEL))
 
 #define ZMK_MOUSE_DEFAULT_MOVE_VAL 40000  // 600
 #define ZMK_MOUSE_DEFAULT_SCRL_VAL 40000  // 10
@@ -47,10 +48,10 @@
     behaviors {
         sm: stick_mod       { compatible = "zmk,behavior-sticky-key"; #binding-cells = <1>; bindings = <&kp>; release-after-ms = <2000>; quick-release; ignore-modifiers; };
         hsk: holdstickymod  { compatible = "zmk,behavior-hold-tap";   #binding-cells = <2>; flavor = "balanced";        tapping-term-ms = <200>; bindings = <&kp>, <&sm>; }; 
-        lkp: molayer_kp     { compatible = "zmk,behavior-hold-tap";   #binding-cells = <2>; flavor = "balanced";        tapping-term-ms = <400>; bindings = <&mo>, <&kp>; }; 
-        kkp: holdkp_kp      { compatible = "zmk,behavior-hold-tap";   #binding-cells = <2>; flavor = "balanced";        tapping-term-ms = <400>; bindings = <&kp>, <&kp>; }; 
-        mtg: mo_tog         { compatible = "zmk,behavior-hold-tap";   #binding-cells = <2>; flavor = "hold-preferred";  tapping-term-ms = <400>; bindings = <&mo>, <&tog>; }; 
-//        sms: sl_moshft      { compatible = "zmk,behavior-hold-tap";   #binding-cells = <2>; flavor = "balanced"; tapping-term-ms = <200>; bindings = <&layshf>, <&sl>; }; 
+        lkp: molayer_kp     { compatible = "zmk,behavior-hold-tap";   #binding-cells = <2>; flavor = "balanced";        tapping-term-ms = <300>; bindings = <&mo>, <&kp>; }; 
+        slm: sl_mo          { compatible = "zmk,behavior-hold-tap";   #binding-cells = <2>; flavor = "balanced";        tapping-term-ms = <300>; bindings = <&mo>, <&sl>; }; 
+        mtg: mo_tog         { compatible = "zmk,behavior-hold-tap";   #binding-cells = <2>; flavor = "hold-preferred";  tapping-term-ms = <300>; bindings = <&mo>, <&tog>; }; 
+//        kkp: holdkp_kp      { compatible = "zmk,behavior-hold-tap";   #binding-cells = <2>; flavor = "balanced";        tapping-term-ms = <400>; bindings = <&kp>, <&kp>; }; 
 //        cw: kp_capwrd       { compatible = "zmk,behavior-hold-tap";   #binding-cells = <2>; flavor = "balanced"; tapping-term-ms = <200>; bindings = <&kp>, <&capwrd>; };
 //        symi: symtap        { compatible = "zmk,behavior-hold-tap";   #binding-cells = <2>; flavor = "balanced"; tapping-term-ms = <200>; bindings = <&numshf>, <&sl>; }; 
 //        blt: bluetoot     { compatible = "zmk,behavior-mod-morph";  #binding-cells = <0>; bindings = <&bt BT_NXT>, <&bt BT_CLR>; mods = <MOD_RALT>; };
@@ -77,20 +78,19 @@
             //  0           1           2           3           4           5           6           7           8           9
                 &kp Q       &kp W       &kp E       &kp R       &kp T       &kp Y       &kp U       &kp I       &kp O       &kp P 
                 &kp TAB     &kp A       &kp S       &kp D       &kp F       &kp G       &kp H       &kp J       &kp K       &kp L 
-                &kp DEL     &kp Z       &kp X       &kp C       &kp V       &kp B       &kp N       &kp M       &sl NU      hs(RGUI)
-                &mkp MB4    &mkp MB5    hs(LALT)    hs(LCTRL)   hs(LSHFT)   &lkp FN BSPC  &lkp NU SPACE  &lkp MU ENTER &vold &volu 
+                &kp CAPS    &kp Z       &kp X       &kp C       &kp V       &kp B       &kp N       &kp M       &kp COMMA   &kp DOT 
+                &mkp MB4    &mkp MB5    hs(LALT)    hs(LCTRL)   hs(LSHFT)   hs(LGUI)    &lkp NU SPACE  &slm FN FN  &vold    &volu 
             >; 
         };
 
-        
         num {
             display-name = "/12";
             bindings = < 
             //  1           2           3           4           5           6           7           8           9           10 
-                &ltg NU     &kp ESC     &kp N1      &kp N2      &kp N3      &kp GRAVE   &kp SEMI    &kp MINUS   &kp EQUAL   &kp BSLH  
-                ____        &kp N0      &kp N4      &kp N5      &kp N6      &key_repeat &kp COMMA   &kp DOT     &kp SQT     &kp SLASH 
-                ____        hs(LGUI)    &kp N7      &kp N8      &kp N9      &capwrd     &kp LBKT    &kp RBKT    &parens     ____ 
-                ____        ____        ____        ____        ____        ____        &rp SPACE   ____        ____        ____
+                xxxx        &kp ESC     &kp N1      &kp N2      &kp N3      &kp GRAVE   &kp SEMI    &kp MINUS   &kp EQUAL   &kp BSLH  
+                ____        &kp N0      &kp N4      &kp N5      &kp N6      &capwrd     &kp LBKT    &kp RBKT    &kp SQT     &kp SLASH 
+                ____        &parens     &kp N7      &kp N8      &kp N9      xxxx        &kp BSPC    &kp ENTER   &kp ESC     &key_repeat 
+                ____        ____        ____        ____        ____        ____        &rp SPACE   &ltg NU     ____        ____
             >; 
         };
         
@@ -100,7 +100,7 @@
             //  1           2           3           4           5           6           7           8           9           10 
                 &kp F11     &kp F12     &kp F13     &kp F14     &kp F15     &kp F16     &kp F17     &kp F18     &kp F19     &kp F20 
                 ____        &aim AIM_TOG xxxx       &mkp MB2    &mkp MB1    xxxx        &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT 
-                ____        hs(LGUI)    &ltg MU     &bapp       &mkp MB3    xxxx        &msc SCRL_UP &msc SCRL_DOWN ____    ____ 
+                ____        &mkp MB4    &mkp MB5    &bapp       &mkp MB3    xxxx        &msc SCRL_UP &msc SCRL_DOWN ____    ____ 
                 ____        ____        ____        ____        ____        ____        ____        ____        ____        ____
             >; 
         };
@@ -111,8 +111,8 @@
             //  1           2           3           4           5           6           7           8           9           10 
                 &kp F1      &kp F2      &kp F3      &kp F4      &kp F5      &kp F6      &kp F7      &kp F8      &kp F9      &kp F10 
                 ____        &kp PG_UP   &kp HOME    &kp END     &kp PG_DN   &kp INS     &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT
-                ____        hs(LGUI)    &mkp MB4    &mkp MB5    &kp CAPS    &kp SPACE   &kp BSPC    &kp ENTER   &kp ESC     &kp PSCRN 
-                ____        ____        hs(RALT)    hs(RCTRL)   ____        ____        &ltg FN        ____        ____
+                ____        &kp PSCRN   xxxx        &kp SPACE   &kp DEL     LCKS        &kp BSPC    &kp ENTER   &kp ESC     &key_repeat 
+                ____        ____        hs(RALT)    hs(RCTRL)   hs(RSHFT)   hs(RGUI)    &ltg FN     &mo MU      ____        ____
             >; 
         };
         
