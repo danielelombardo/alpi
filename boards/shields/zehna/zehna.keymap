@@ -112,7 +112,7 @@
                 &kp ESC     &kp LBKT    &kp MINUS   &kp EQUAL   &kp RBKT    &kp GRAVE   &kp PG_UP   &kp HOME    &kp END     &kp PG_DN   
                 ____        &kp SEMI    &kp SQT     &kp SLASH   &kp BSLH    &capwrd     &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT
                 ____        &parens     &kp INS     &kp PSCRN   &kp DEL     LCKS        &kp BSPC    &kp ENTER   &kp ESC     &key_repeat 
-                ____        ____        ____        ____        ____        ____        ____        ____        ____        ____
+                ____        ____        ____        ____        ____        ____        RST         ____        ____        ____
             >; 
         };
         
