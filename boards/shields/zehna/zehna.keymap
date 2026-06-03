@@ -79,7 +79,7 @@
                 &kp Q       &kp W       &kp E       &kp R       &kp T       &kp Y       &kp U       &kp I       &kp O       &kp P 
                 &kp TAB     &kp A       &kp S       &kp D       &kp F       &kp G       &kp H       &kp J       &kp K       &kp L 
                 &kp CAPS    &kp Z       &kp X       &kp C       &kp V       &kp B       &kp N       &kp M       &kp COMMA   &kp DOT 
-                &mkp MB4    &mkp MB5    hs(LALT)    hs(LCTRL)   hs(LSHFT)   hs(LGUI)    &lkp NU SPACE  &slm FN FN  &vold    &volu 
+                &mkp MB4    &mkp MB5    hs(LALT)    hs(LCTRL)   hs(LSHFT)   hs(LGUI)    &lkp FN SPACE  &slm NU NU  &vold    &volu 
             >; 
         };
 
@@ -87,32 +87,32 @@
             display-name = "/12";
             bindings = < 
             //  1           2           3           4           5           6           7           8           9           10 
-                xxxx        &kp ESC     &kp N1      &kp N2      &kp N3      &kp GRAVE   &kp LBKT    &kp MINUS   &kp EQUAL   &kp RBKT 
-                ____        &kp N0      &kp N4      &kp N5      &kp N6      &capwrd     &kp SEMI    &kp SQT     &kp SLASH   &kp BSLH  
-                ____        &parens     &kp N7      &kp N8      &kp N9      xxxx        &kp BSPC    &kp ENTER   &kp ESC     &key_repeat 
-                ____        ____        ____        ____        ____        ____        &rp SPACE   &ltg NU     ____        ____
+                &kp ESC     &kp BSPC    &kp N1      &kp N2      &kp N3      &kp F5      &kp F1      &kp F2      &kp F3      &kp F4
+                ____        &kp N0      &kp N4      &kp N5      &kp N6      &kp F6      &kp F7      &kp F8      &kp F9      &kp F10
+                ____        &kp ENTER   &kp N7      &kp N8      &kp N9      xxxx        &tog FN     &ltg NU     &tog MU     &key_repeat 
+                ____        ____        ____        ____        ____        ____        ____        ____        ____        ____
             >; 
         };
-        
+
         mou {
             display-name = "mou";
             bindings = <
             //  1           2           3           4           5           6           7           8           9           10 
                 &kp F11     &kp F12     &kp F13     &kp F14     &kp F15     &kp F16     &kp F17     &kp F18     &kp F19     &kp F20 
                 ____        &aim AIM_TOG xxxx       &mkp MB2    &mkp MB1    xxxx        &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT 
-                ____        &mkp MB4    &mkp MB5    &bapp       &mkp MB3    xxxx        &msc SCRL_UP &msc SCRL_DOWN ____    ____ 
+                ____        &mkp MB4    &mkp MB5    &bapp       &mkp MB3    xxxx        &msc SCRL_UP &msc SCRL_DOWN &tog MU xxxx 
                 ____        ____        ____        ____        ____        ____        ____        ____        ____        ____
             >; 
         };
- 
+
         fun {
-            display-name = "f->";
-            bindings = <
+            display-name = "*->";
+            bindings = < 
             //  1           2           3           4           5           6           7           8           9           10 
-                &kp F1      &kp F2      &kp F3      &kp F4      &kp F5      &kp F6      &kp F7      &kp F8      &kp F9      &kp F10 
-                ____        &kp PG_UP   &kp HOME    &kp END     &kp PG_DN   &kp INS     &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT
-                ____        &kp PSCRN   xxxx        &kp SPACE   &kp DEL     LCKS        &kp BSPC    &kp ENTER   &kp ESC     &key_repeat 
-                ____        ____        hs(RALT)    hs(RCTRL)   hs(RSHFT)   hs(RGUI)    &ltg FN     &mo MU      ____        ____
+                &kp ESC     &kp LBKT    &kp MINUS   &kp EQUAL   &kp RBKT    &kp GRAVE   &kp PG_UP   &kp HOME    &kp END     &kp PG_DN   
+                ____        &kp SEMI    &kp SQT     &kp SLASH   &kp BSLH    &capwrd     &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT
+                ____        &parens     &kp INS     &kp PSCRN   &kp DEL     LCKS        &kp BSPC    &kp ENTER   &kp ESC     &key_repeat 
+                ____        ____        ____        ____        ____        ____        ____        ____        ____        ____
             >; 
         };
         
