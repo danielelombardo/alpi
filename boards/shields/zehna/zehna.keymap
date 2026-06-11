@@ -122,9 +122,9 @@
             display-name = "*->";
             bindings = < 
             //  1           2           3           4           5           6           7           8           9           10 
-                &kp ESC     &kp CAPS    &kp INS     &kp PSCRN   &capwrd   &aim AIM_TOG  &kp PG_UP   &kp HOME    &kp END     &kp PG_DN   
-                &key_repeat hs(LALT)    hs(LGUI)    hs(LCTRL)   hs(LSHFT)   xxxx        &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT
-                ____        &vold       xxxx        &bapp       &volu       LCKS        &kp BSPC    &kp ENTER   &kp TAB     &kp DEL 
+                &kp ESC     &kp CAPS    &kp INS     &kp PSCRN   &capwrd   &aim AIM_TOG  &kp BSPC    &kp ENTER   &kp TAB     &kp DEL 
+                ____        hs(LALT)    hs(LGUI)    hs(LCTRL)   hs(LSHFT)   &key_repeat &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT
+                ____        &vold       xxxx        &bapp       &volu       LCKS        &kp HOME    &kp PG_DN   &kp PG_UP   &kp END 
                 ____        ____        ____        ____        ____        ____        ____        ____        ____        ____  
             >; 
         };
