@@ -57,7 +57,7 @@
         /omit-if-no-ref/ cw: kp_capwrd       { compatible = "zmk,behavior-hold-tap";   #binding-cells = <2>; flavor = "balanced"; tapping-term-ms = <200>; bindings = <&kp>, <&capwrd>; };
         /omit-if-no-ref/ symi: symtap        { compatible = "zmk,behavior-hold-tap";   #binding-cells = <2>; flavor = "balanced"; tapping-term-ms = <200>; bindings = <&numshf>, <&sl>; }; 
         
-        /omit-if-no-ref/ blt: bluetoot       { compatible = "zmk,behavior-mod-morph";  #binding-cells = <0>; bindings = <&bt BT_NXT>, <&bt BT_CLR>; mods = <MOD_RALT>; };
+        // /omit-if-no-ref/ blt: bluetoot       { compatible = "zmk,behavior-mod-morph";  #binding-cells = <0>; bindings = <&bt BT_NXT>, <&bt BT_CLR>; mods = <MOD_RALT>; };
         /omit-if-no-ref/ pars: parentheses   { compatible = "zmk,behavior-mod-morph";  #binding-cells = <0>; bindings = <&kp LPAR>, <&kp RPAR>; mods = <(MOD_LSFT|MOD_RSFT)>; };
         /omit-if-no-ref/ vold: volum_dw_mute { compatible = "zmk,behavior-mod-morph";  #binding-cells = <0>; bindings = <&kp C_VOL_DN>, <&kp C_MUTE>; mods = <(MOD_LGUI|MOD_RGUI)>; };
         /omit-if-no-ref/ volu: volum_up_mute { compatible = "zmk,behavior-mod-morph";  #binding-cells = <0>; bindings = <&kp C_VOL_UP>, <&kp C_MUTE>; mods = <(MOD_LGUI|MOD_RGUI)>; };
