@@ -1,0 +1,2 @@
+#include "hardware_layouts/laut.h"
+#include "includes/base.dtsi"

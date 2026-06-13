@@ -1,0 +1,2 @@
+#include "hardware_layouts/zehna.h"
+#include "includes/base.dtsi"
