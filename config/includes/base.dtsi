@@ -47,10 +47,11 @@
     };
 
     behaviors {
+        /omit-if-no-ref/ tdc: tap_dance_caps { compatible = "zmk,behavior-tap-dance";  #binding-cells = <0>; tapping-term-ms = <200>; bindings = <&sm LSHFT>, <&kp CAPS>};
         /omit-if-no-ref/ sm: stick_mod       { compatible = "zmk,behavior-sticky-key"; #binding-cells = <1>; bindings = <&kp>; release-after-ms = <2000>; quick-release; ignore-modifiers; };
         /omit-if-no-ref/ hsk: holdstickymod  { compatible = "zmk,behavior-hold-tap";   #binding-cells = <2>; flavor = "balanced";        tapping-term-ms = <250>; bindings = <&kp>, <&sm>; }; 
         /omit-if-no-ref/ lkp: molayer_kp     { compatible = "zmk,behavior-hold-tap";   #binding-cells = <2>; flavor = "balanced";        tapping-term-ms = <250>; bindings = <&mo>, <&kp>; }; 
-        /omit-if-no-ref/ lsm: molayer_sm     { compatible = "zmk,behavior-hold-tap";   #binding-cells = <2>; flavor = "balanced";        tapping-term-ms = <250>; bindings = <&mo>, <&sm>; }; 
+        /omit-if-no-ref/ ltc: molayer_tdc    { compatible = "zmk,behavior-hold-tap";   #binding-cells = <2>; flavor = "balanced";        tapping-term-ms = <250>; bindings = <&mo>, <&tdc>; }; 
         /omit-if-no-ref/ kkp: holdkp_kp      { compatible = "zmk,behavior-hold-tap";   #binding-cells = <2>; flavor = "balanced";        tapping-term-ms = <400>; bindings = <&kp>, <&kp>; }; 
         /omit-if-no-ref/ mtg: mo_tog         { compatible = "zmk,behavior-hold-tap";   #binding-cells = <2>; flavor = "hold-preferred";  tapping-term-ms = <300>; bindings = <&mo>, <&tog>; }; 
         
@@ -58,7 +59,6 @@
         /omit-if-no-ref/ volu: volum_up_mute { compatible = "zmk,behavior-mod-morph";  #binding-cells = <0>; bindings = <&kp C_VOL_UP>, <&kp C_MUTE>; mods = <(MOD_LGUI|MOD_RGUI)>; };
         /omit-if-no-ref/ pars: parentheses   { compatible = "zmk,behavior-mod-morph";  #binding-cells = <0>; bindings = <&kp LPAR>, <&kp RPAR>; mods = <(MOD_LSFT|MOD_RSFT)>; };
         // /omit-if-no-ref/ blt: bluetoot       { compatible = "zmk,behavior-mod-morph";  #binding-cells = <0>; bindings = <&bt BT_NXT>, <&bt BT_CLR>; mods = <MOD_RALT>; };
-    };
 
     anti_idle {
         compatible = "zmk,anti-idle-generic";
@@ -78,7 +78,7 @@
                 &kp Q       , &kp W       , &kp E       , &kp R       , &kp T       , &kp Y       , &kp U       , &kp I       , &kp O       , &kp P   ,\
                 &kp TAB     , &kp A       , &kp S       , &kp D       , &kp F       , &kp G       , &kp H       , &kp J       , &kp K       , &kp L   ,\
                 &kp CAPS    , &kp Z       , &kp X       , &kp C       , &kp V       , &kp B       , &kp N       , &kp M       , &kp COMMA   , &kp DOT ,\
-                &mkp MB4    , &mkp MB5    , xxxx       , &tog MU  , &lsm NA LSHFT   , &key_repeat , &lkp MA SPACE  , &mo FN   , &vold       , &volu    
+                &mkp MB4    , &mkp MB5    , xxxx       , &tog MU      , &ltc NA 0   , &key_repeat , &lkp MA SPACE  , &mo FN   , &vold       , &volu    
             )>; 
         };
 
