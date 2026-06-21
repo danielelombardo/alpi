@@ -1,2 +1,2 @@
-#include "hardware_layouts/knicki.h"
+#include "hardware_layouts/nicki.h"
 #include "includes/base.dtsi"
