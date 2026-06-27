@@ -86,8 +86,8 @@
             display-name = "/12";
             bindings = < LAYER_FROM40( \
                 &kp ESC     , &kp F10     , &kp F1      , &kp F2      , &kp F3    , xxxx      , xxxx        , &kp F13     , &kp F14     , &kp F15  ,\
-                ____        , &kp F11     , &kp F4      , &kp F5      , &kp F6    , xxxx      , xxxx        , &kp F16     , &kp F17     , &kp F18  ,\
-                ____        , &kp F12     , &kp F7      , &kp F8      , &kp F9    , xxxx      , xxxx        , &kp F19     , &kp F20     , &kp F21  ,\
+                ____        , &kp F11     , &kp F4      , &kp F5      , &kp F6    , xxxx      , &aim AIM_TOG, &kp F16     , &kp F17     , &kp F18  ,\
+                ____        , &kp F12     , &kp F7      , &kp F8      , &kp F9    , xxxx      , &bapp       , &kp F19     , &kp F20     , &kp F21  ,\
                 ____        , ____        , ____        , ____        , ____      , ____      , ____        , ____        , ____        , ____      \
             )>; 
         };
@@ -116,9 +116,9 @@
         nav {
             display-name = "*->";
             bindings = < LAYER_FROM40( \
-                &kp ESC     , &key_repeat , &kp INS     , &capwrd     , &kp PSCRN , &aim AIM_TOG, &kp BSPC    , &kp ENTER   , &kp TAB     , &kp DEL     ,\
-                ____        , hs(LALT)    , hs(LGUI)    , hs(LCTRL)   , hs(LSHFT) , &kp CAPS    , &kp LEFT    , &kp DOWN    , &kp UP      , &kp RIGHT   ,\
-                ____        , &vold       , xxxx        , &bapp       , &volu     , LCKS        , &kp HOME    , &kp PG_DN   , &kp PG_UP   , &kp END     ,\
+                &kp ESC     , &key_repeat , &kp INS     , &capwrd     , &kp CAPS  , xxxx        , &kp BSPC    , &kp ENTER   , &kp TAB     , &kp DEL     ,\
+                ____        , hs(LALT)    , hs(LGUI)    , hs(LCTRL)   , hs(LSHFT) , xxxx        , &kp LEFT    , &kp DOWN    , &kp UP      , &kp RIGHT   ,\
+                ____        , &vold       , &kp PSCRN   , LCKS        , &volu     , xxxx        , &kp HOME    , &kp PG_DN   , &kp PG_UP   , &kp END     ,\
                 ____        , ____        , ____        , ____        , ____      , ____        , &kp SPACE   , ____        , ____        , ____         \
             )>; 
         };
