@@ -116,9 +116,9 @@
         nav {
             display-name = "*->";
             bindings = < LAYER_FROM40( \
-                &kp ESC     , &key_repeat , &kp INS     , &capwrd     , &kp CAPS  , xxxx        , &kp BSPC    , &kp ENTER   , &kp TAB     , &kp DEL     ,\
-                ____        , hs(LALT)    , hs(LGUI)    , hs(LCTRL)   , hs(LSHFT) , &kp SPACE   , &kp LEFT    , &kp DOWN    , &kp UP      , &kp RIGHT   ,\
-                ____        , &vold       , &kp PSCRN   , LCKS        , &volu     , xxxx        , &kp HOME    , &kp PG_DN   , &kp PG_UP   , &kp END     ,\
+                &kp ESC     , &key_repeat , &kp INS     , &kp PSCRN   , &kp SPACE , xxxx        , &kp BSPC    , &kp ENTER   , &kp TAB     , &kp DEL     ,\
+                ____        , hs(LALT)    , hs(LGUI)    , hs(LCTRL)   , hs(LSHFT) , xxxx        , &kp LEFT    , &kp DOWN    , &kp UP      , &kp RIGHT   ,\
+                ____        , &capswrd    , LCKS        , &vold       , &volu     , xxxx        , &kp HOME    , &kp PG_DN   , &kp PG_UP   , &kp END     ,\
                 ____        , ____        , ____        , ____        , ____      , ____        , ____        , ____        , ____        , ____         \
             )>; 
         };
