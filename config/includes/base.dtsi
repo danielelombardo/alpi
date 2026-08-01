@@ -107,8 +107,8 @@
             display-name = "/12";
             bindings = < LAYER_FROM40( \
                 &kp GRAVE   , &kp N0      , &kp N1      , &kp N2      , &kp N3    , xxxx        , &kp BSLH    , &kp SEMI    , &kp SQT     , &kp SLASH   ,\
-                ____        , &kp MINUS   , &kp N4      , &kp N5      , &kp N6    , xxxx        , hs(RSHFT)   , hs(RCTRL)   , hs(RGUI)    , hs(RALT)    ,\
-                ____        , &kp EQUAL   , &kp N7      , &kp N8      , &kp N9    , xxxx        , &kp LBKT    , &kp NUBS    , &kp NUHS    , &kp RBKT    ,\
+                ____        , &kp MINUS   , &kp N4      , &kp N5      , &kp N6    , &kp NUHS    , hs(RSHFT)   , hs(RCTRL)   , hs(RGUI)    , hs(RALT)    ,\
+                ____        , &kp EQUAL   , &kp N7      , &kp N8      , &kp N9    , &kp NUBS    , &kp LBKT    , &kp RBKT    , ____        , ____        ,\
                 ____        , ____        , ____        , ____        , ____      , ____        , ____        , ____        , ____        , ____         \
             )>; 
         };
@@ -116,9 +116,9 @@
         nav {
             display-name = "*->";
             bindings = < LAYER_FROM40( \
-                &kp ESC     , &key_repeat , &kp INS     , &kp PSCRN   , &kp SPACE , xxxx        , &kp BSPC    , &kp ENTER   , &kp TAB     , &kp DEL     ,\
+                &kp ESC     , &key_repeat , &kp INS     , &kp PSCRN   , &kp K_CANCEL , xxxx     , &kp BSPC    , &kp ENTER   , &kp TAB     , &kp DEL     ,\
                 ____        , hs(LALT)    , hs(LGUI)    , hs(LCTRL)   , hs(LSHFT) , xxxx        , &kp LEFT    , &kp DOWN    , &kp UP      , &kp RIGHT   ,\
-                ____        , &capwrd     , LCKS        , &vold       , &volu     , xxxx        , &kp HOME    , &kp PG_DN   , &kp PG_UP   , &kp END     ,\
+                ____        , &capwrd     , LCKS        , &vold       , &volu     , &kp SPACE   , &kp HOME    , &kp PG_DN   , &kp PG_UP   , &kp END     ,\
                 ____        , ____        , ____        , ____        , ____      , ____        , ____        , ____        , ____        , ____         \
             )>; 
         };
