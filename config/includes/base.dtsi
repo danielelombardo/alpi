@@ -78,7 +78,7 @@
                 &kp Q       , &kp W       , &kp E       , &kp R       , &kp T       , &kp Y       , &kp U       , &kp I       , &kp O       , &kp P   ,\
                 &kp TAB     , &kp A       , &kp S       , &kp D       , &kp F       , &kp G       , &kp H       , &kp J       , &kp K       , &kp L   ,\
                 &kp CAPS    , &kp Z       , &kp X       , &kp C       , &kp V       , &kp B       , &kp N       , &kp M       , &kp COMMA   , &kp DOT ,\
-                &mkp MB4    , &mkp MB5    , xxxx       , &tog MU  , &lsm NA LSHFT  , &key_repeat  , &lkp MA SPACE  , &mo FN   , &vold       , &volu    
+                LCKS        , &mkp MB4    , &mkp MB5    , &tog MU  , &lsm NA LSHFT  , &key_repeat , &lkp MA SPACE  , &mo FN   , &vold       , &volu    
             )>; 
         };
 
@@ -116,10 +116,10 @@
         nav {
             display-name = "*->";
             bindings = < LAYER_FROM40( \
-                &kp ESC     , &key_repeat , &kp INS     , &kp PSCRN   , &kp K_CANCEL , xxxx     , &kp BSPC    , &kp ENTER   , &kp TAB     , &kp DEL     ,\
-                ____        , hs(LALT)    , hs(LGUI)    , hs(LCTRL)   , hs(LSHFT) , xxxx        , &kp LEFT    , &kp DOWN    , &kp UP      , &kp RIGHT   ,\
-                ____        , &capwrd     , LCKS        , &vold       , &volu     , &kp SPACE   , &kp HOME    , &kp PG_DN   , &kp PG_UP   , &kp END     ,\
-                ____        , ____        , ____        , ____        , ____      , ____        , ____        , ____        , ____        , ____         \
+                &kp ESC     , &key_repeat , &kp LC(X)   , &kp LC(C)   , &kp LC(V) , xxxx       , &kp BSPC    , &kp ENTER   , &kp TAB     , &kp DEL     ,\
+                ____        , hs(LALT)    , hs(LGUI)    , hs(LCTRL)   , hs(LSHFT) , xxxx       , &kp LEFT    , &kp DOWN    , &kp UP      , &kp RIGHT   ,\
+                ____        , &capwrd     , &kp INS     , &kp PSCRN   , xxxx      , xxxx       , &kp HOME    , &kp PG_DN   , &kp PG_UP   , &kp END     ,\
+                ____        , ____        , ____        , ____        , ____      , ____       , &kp SPACE   , &kp K_CANCEL , ____       , ____         \
             )>; 
         };
         
