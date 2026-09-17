@@ -34,7 +34,7 @@
 #define ar(k) &hmr RALT k
 #define sr(k) &hmr RSHFT k
 
-define ZMK_MOUSE_DEFAULT_MOVE_VAL 50000  // 600
+#define ZMK_MOUSE_DEFAULT_MOVE_VAL 50000  // 600
 #define ZMK_MOUSE_DEFAULT_SCRL_VAL 50000  // 10
 #include <dt-bindings/zmk/pointing.h>
 &mmv {
