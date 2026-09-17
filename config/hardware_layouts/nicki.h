@@ -21,3 +21,6 @@
 /*
                         xxxx       &tog MU  &lsm NA LSHFT               &lkp MA SPACE  &mo FN   xxxx
 &mkp MB4    &mkp MB5    xxxx       &tog MU  &lsm NA LSHFT  &key_repeat  &lkp MA SPACE  &mo FN   &vold       &volu */
+
+
+#define THUMBS 30 31 32 33 34 35 36 37 //38 39            // Thumb keys
