@@ -135,7 +135,7 @@
         nav {
             display-name = "*->";
             bindings = < LAYER_FROM40( \
-                &kp ESC     , &md(Z)      , &md(X)      , &md(C)      , &md(V)    , xxxx       , &kp BSPC    , &kp ENTER   , &kp TAB     , &kp DEL     ,\
+                &kp ESC     , md(Z)       , md(X)       , md(C)       , md(V)     , xxxx       , &kp BSPC    , &kp ENTER   , &kp TAB     , &kp DEL     ,\
                 ____        , &sm LGUI    , &sm LALT    , &sm LCTRL   , &sm LSHFT , xxxx       , &kp LEFT    , &kp DOWN    , &kp UP      , &kp RIGHT   ,\
                 ____        , xxxx        , &kp INS     , &kp PSCRN   ,&key_repeat, xxxx       , &kp HOME    , &kp PG_DN   , &kp PG_UP   , &kp END     ,\
                 ____        , ____        , ____        , ____        , ____      , ____       , &kp SPACE   , ____        , ____        , ____         \
