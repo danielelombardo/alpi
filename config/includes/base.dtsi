@@ -126,7 +126,7 @@
             bindings = < LAYER_FROM40( \
                 &kp ESC     , &kp GRAVE   , &kp N7      , &kp N8      , &kp N9    , xxxx        , &kp BSLH      , &kp SQT       , &kp MINUS    , &kp RBKT   ,\
                 ____        , gl(N0)      , al(N4)      , cl(N5)      , sl(N6)    , xxxx        , sr(SLASH)     , cr(SEMI)      , ar(EQUAL)    , gr(LBKT)   ,\
-                ____        , &kp DOT,    , &kp N1      , &kp N2      , &kp N3    , xxxx        , &kp NUHS      , &kp NUBS      , ____         , ____       ,\
+                ____        , &kp DOT     , &kp N1      , &kp N2      , &kp N3    , xxxx        , &kp NUHS      , &kp NUBS      , ____         , ____       ,\
                 ____        , ____        , ____        , ____        , ____      , ____        , ____          , ____          , ____         , ____        \
             )>; 
         };
