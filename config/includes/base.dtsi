@@ -93,20 +93,20 @@
             display-name = "ABC";
             bindings = <LAYER_FROM40( \
             //  1             2             3             4             5             6             7             8             9             10
-                &kp Q       , &kp W       , &kp E       , &kp R       , &kp T       , &kp Y       , &kp U       , &kp I       , &kp O       , &kp P   ,\
-                cl(A)       , al(S)       , gl(D)       , sl(F)       , &kp TAB     , &kp G       , sr(H)       , gr(J)       , ar(K)       , cr(L)   ,\
-                &kp Z       , &kp X       , &kp C       , &kp V       , &kp CAPS    , &kp B       , &kp N       , &kp M       , &kp COMMA   , &kp DOT ,\
-                LCKS        , &sm LCTRL   , &sm LGUI    , &mo MA   , &lsm MA LSHFT  , &mo NA   , &lkp NA SPACE  , &mo FN      , &vold       , &volu    
+                &kp Q       , &kp W       , &kp E       , &kp R       , &kp BSPC    , &kp Y       , &kp U       , &kp I       , &kp O       , &kp P   ,\
+                cl(A)       , al(S)       , gl(D)       , sl(F)       , &kp T       , &kp G       , sr(H)       , gr(J)       , ar(K)       , cr(L)   ,\
+                &kp Z       , &kp X       , &kp C       , &kp V       , &kp ENTER   , &kp B       , &kp N       , &kp M       , &kp COMMA   , &kp DOT ,\
+                &sm LCTRL   , &sm LGUI    , &kp CAPS    , &mo MA   , &lsm MA LSHFT  , &mo NA   , &lkp NA SPACE  , &mo FN      , &vold       , &volu    
             )>; 
         };
 
         fun {
             display-name = "fn+";
             bindings = < LAYER_FROM40( \
-                &kp ESC     , &kp F7      , &kp F8      , &kp F9      , &tog MU     , xxxx      , &kp F17     , &kp F18     , &kp F19     , &aim AIM_OFF ,\
-                cl(F10)     , al(F4)      , gl(F5)      , sl(F6)      , ____        , xxxx      , sr(F14)     , gr(F15)     , ar(F16)     , cr(F20)      ,\
-                &bapp       , &kp F1      , &kp F2      , &kp F3      , ____        , xxxx      , &kp F11     , &kp F12     , &kp F13     , &aim AIM_ON  ,\
-                ____        , ____        , ____        , ____        , ____        , ____      , ____        , ____        , ____        , ____      \
+                &kp ESC     , &kp F7      , &kp F8      , &kp F9      , &kp BSPC    , xxxx      , &kp F17     , &kp F18     , &kp F19     , &aim AIM_OFF ,\
+                cl(F10)     , al(F4)      , gl(F5)      , sl(F6)      , &kp TAB     , xxxx      , sr(F14)     , gr(F15)     , ar(F16)     , cr(F20)      ,\
+                &bapp       , &kp F1      , &kp F2      , &kp F3      , &kp ENTER   , xxxx      , &kp F11     , &kp F12     , &kp F13     , &aim AIM_ON  ,\
+                ____        , ____        , ____        , ____        , ____        , ____      , ____        , ____        , ____        , &tog MU      \
             )>; 
         };
 
@@ -114,30 +114,30 @@
             display-name = "mou";
             bindings = < LAYER_FROM40( \
             //  1             2             3             4             5           6             7                8                9              10
-                &sm LCTRL   , &sm LALT    , &sm LGUI    , &sm LSHFT   , xxxx      , xxxx        , &sm RSHFT      , &sm RGUI       , &sm RALT     , &sm RCTRL      ,\
-                &mkp MB4    , &mkp MB5    , &mkp MB2    , &mkp MB1    , ____      , xxxx        , &mmv MOVE_LEFT , &mmv MOVE_DOWN , &mmv MOVE_UP , &mmv MOVE_RIGHT  ,\
-                &kp ESC     , xxxx        , xxxx        , &mkp MB3    , ____      , xxxx        , &msc SCRL_UP   , &msc SCRL_DOWN , xxxx         , xxxx             ,\
-                ____        , ____        , ____        , ____        , ____      , ____        , &tog MU        , ____           , ____         , ____  \
+                &kp ESC     , xxxx        , xxxx        , xxxx        , xxxx      , xxxx        , xxxx           , xxxx           , xxxx         , xxxx             ,\
+                xxxx        , &mkp MB3    , &mkp MB2    , &mkp MB1    , ____      , xxxx        , &mmv MOVE_LEFT , &mmv MOVE_DOWN , &mmv MOVE_UP , &mmv MOVE_RIGHT  ,\
+                xxxx        , xxxx        , xxxx        , xxxx        , ____      , xxxx        , &msc SCRL_UP   , &msc SCRL_DOWN , xxxx         , xxxx             ,\
+                ____        , ____        , ____        , ____        , ____      , ____        , ____           , ____           , ____         , &tog MU          \
             )>; 
         };  
 
         mat {
             display-name = "/12";
             bindings = < LAYER_FROM40( \
-                &kp ESC     , &kp N7      , &kp N8      , &kp N9      , &kp GRAVE   , xxxx        , &kp BSLH      , &kp SQT       , &kp MINUS    , &kp RBKT   ,\
-                cl(N0)      , al(N4)      , gl(N5)      , sl(N6)      , ____        , xxxx        , sr(SLASH)     , gr(SEMI)      , ar(EQUAL)    , cr(LBKT)   ,\
-                &kp DOT     , &kp N1      , &kp N2      , &kp N3      , ____        , xxxx        , &kp NUHS      , &kp NUBS      , ____         , ____       ,\
-                ____        , ____        , ____        , ____        , ____        , ____        , ____          , ____          , ____         , ____        \
+                &kp ESC     , &kp N7      , &kp N8      , &kp N9      , &kp BSPC    , xxxx        , &kp BSLH      , &kp SQT       , &kp MINUS    , &kp RBKT   ,\
+                cl(N0)      , al(N4)      , gl(N5)      , sl(N6)      , &kp TAB     , &kp GRAVE   , sr(SLASH)     , gr(SEMI)      , ar(EQUAL)    , cr(LBKT)   ,\
+                &kp DOT     , &kp N1      , &kp N2      , &kp N3      , &kp ENTER   , xxxx        , &kp NUHS      , &kp NUBS      , ____         , ____       ,\
+                &mkp MB4    , &mkp MB5    , ____        , ____        , ____        , ____        , ____          , ____          , ____         , ____        \
             )>; 
         };
      
         nav {
             display-name = "nav";
             bindings = < LAYER_FROM40( \
-                &kp ESC     , &capwrd     , &key_repeat , &kp PSCRN   , xxxx        , &kp INS    , &kp BSPC    , &kp ENTER   , &kp TAB     , &kp DEL     ,\
-                &sm LCTRL   , &sm LALT    , &sm LGUI    , &sm LSHFT   , ____        , xxxx       , &kp LEFT    , &kp DOWN    , &kp UP      , &kp RIGHT   ,\
-                md(Z)       , md(X)       , md(C)       , md(V)       , ____        , xxxx       , &kp HOME    , &kp PG_DN   , &kp PG_UP   , &kp END     ,\
-                ____        , ____        , ____        , sl(SPACE)   , sl(SPACE)   , ____       , ____        , ____        , ____        , LCKS         \
+                &kp ESC     , &capwrd     , &key_repeat , &kp PSCRN   , &kp BSPC    , &kp INS    , &kp BSPC    , &kp ENTER   , &kp TAB     , &kp DEL     ,\
+                &sm LCTRL   , &sm LALT    , &sm LGUI    , &sm LSHFT   , &kp TAB     , xxxx       , &kp LEFT    , &kp DOWN    , &kp UP      , &kp RIGHT   ,\
+                md(Z)       , md(X)       , md(C)       , md(V)       , &kp ENTER   , xxxx       , &kp HOME    , &kp PG_DN   , &kp PG_UP   , &kp END     ,\
+                &mkp MB4    , &mkp MB5    , ____        , sl(SPACE)   , sl(SPACE)   , ____       , ____        , ____        , ____        , LCKS         \
             )>; 
         };
         
